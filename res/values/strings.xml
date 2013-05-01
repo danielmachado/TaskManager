@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TaskManager</string>
+    <!-- Activity Main -->
+    <string name="new_task">Nueva Tarea</string>
+    <!-- New Task -->
+    <string name="title">Título</string>
+    <string name="text">Texto</string>
+    <string name="tags">Etiquetas</string>
+    <string name="geo">Geolocalización</string>
+    <string name="image">Imagen</string>
+    <string name="video">Video</string>
+    <string name="not_support_gps">Proveedor de GPS no soportado</string>
+    <string name="not_support_network">Proveedor de Red no soportado</string>
+    <!-- Task Detail -->
+    <string name="edit">Editar</string>
+    <string name="share">Compartir</string>
+    <string name="delete">Borrar</string>
+    <!-- Share Task -->
+    <string name="title_activity_new_task">NewTask</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_detail_task">DetailTask</string>
+
+    <!-- Tags Spinner Array -->
+    <string-array name="tags">
+        <item>Personal</item>
+        <item>Trabajo</item>
+        <item>Ocio</item>
+        <item>Compra</item>
+    </string-array>
+
+    <string name="create">Crear</string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="no_results">Sin Resultados</string>
+    <string name="title_activity_tags">TagsActivity</string>
+    <string name="speak">Habla!</string>
+    <string name="todas">Todas</string>
+    <string name="location">Localización</string>
+
+</resources>

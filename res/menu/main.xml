@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/mn_new_task"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/new_task"/>
+    <item
+        android:id="@+id/mn_play"
+        android:icon="@drawable/play"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/play"/>
+    <item
+        android:id="@+id/mn_stop"
+        android:icon="@drawable/stop"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom"
+        android:title="@string/stop"/>
+
+</menu>

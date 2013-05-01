@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NewTaskActivity" >
+
+    <TextView
+        android:id="@+id/new_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/new_task"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/new_task"
+        android:layout_below="@+id/new_task"
+        android:layout_marginTop="14dp"
+        android:text="@string/title" />
+
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTitle"
+        android:layout_below="@+id/tvTitle"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_title"
+        android:layout_below="@+id/et_title"
+        android:text="@string/text" />
+
+    <EditText
+        android:id="@+id/et_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_text"
+        android:layout_below="@+id/tv_text"
+        android:ems="10"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/tv_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/et_text"
+        android:layout_below="@+id/et_text"
+        android:text="@string/tags" />
+
+    <Spinner
+        android:id="@+id/spin_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_tags"
+        android:layout_below="@+id/tv_tags"
+        android:layout_marginTop="14dp" />
+
+    <Button
+        android:id="@+id/bt_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spin_tags"
+        android:layout_below="@+id/spin_tags"
+        android:layout_marginLeft="19dp"
+        android:text="@string/video" />
+
+    <Button
+        android:id="@+id/bt_geo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spin_tags"
+        android:layout_toRightOf="@+id/new_task"
+        android:text="@string/geo" />
+
+    <Button
+        android:id="@+id/bt_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/bt_geo"
+        android:layout_alignTop="@+id/new_task"
+        android:text="@string/create" />
+
+    <TextView
+        android:id="@+id/tv_geo_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bt_geo"
+        android:layout_below="@+id/bt_geo"
+        android:layout_marginLeft="46dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/location" />
+
+</RelativeLayout>
